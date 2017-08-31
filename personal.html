@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<title>个人中心页</title>
+<link rel="stylesheet" type="text/css" href="css/publice.css"/>
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<link rel="stylesheet" href="css/swiper.min.css">
+<script src="js/jquery-1.10.1.min.js" type="text/javascript"></script>
+<script type="text/javascript">        
+	fnResize();
+	var evt = "onorientationchange" in window ? "orientationchange" : "resize";
+	window.addEventListener("resize", function() {
+	    fnResize()
+	}, false);
+	function fnResize(){
+	    var docWidth = document.documentElement.clientWidth,
+	            body = document.getElementsByTagName('html')[0];
+	if(docWidth >= 750) docWidth = 749;
+	body.style.fontSize = docWidth / 20 + 'px';
+	}
+</script> 
+<script src="js/swiper.min.js"></script>
+<script type="text/javascript" src="js/style.js" ></script>
+</head>
+<body>
+<div class="ts-wrap">
+	<div class="personal_top">
+		<div class="per_tp">
+			<img src="images/pers_pic1.png">
+		</div>
+		<div class="pers_wz">
+			<p>零点视觉 【普通会员】</p>
+			<div class="tag">
+				<span>福粒：80</span>
+				<span>红包：100</span>
+				<span>ID：1695</span>
+			</div>
+			<div class="tag">
+				<span>福券：80</span>
+				<span>消费答谢金：100</span>
+				<span>送福数：1695</span>
+			</div>
+		</div>
+		<div class="ewm">
+			<ul id="social" class="social">
+				<li class="slist"> 
+			      	<a class="sfocus weixin" href="javascript:void(0);"><img src="images/wx_icon.png"></a>
+			        <div class="fadin fadina">
+						<img src="images/ewm_pic.png">
+					</div>
+			    </li>
+			</ul>
+		</div>
+	</div>
+	<div class="personal_mid">
+		<ul>
+			<li>
+				<p>申请状态</p><span><img src="images/arrow.png"></span>
+			</li>
+			<li>
+				<p>待付款</p><span class="sz colora">0</span>
+			</li>
+			<li>
+				<p>待收货</p><span class="sz colorb">7</span>
+			</li>
+			<li class="last">
+				<p>全部订单</p><span><img src="images/arrow.png"></span>
+			</li>
+		</ul>
+	</div>
+	<div class="personal_mid">
+		<ul>
+			<li>
+				<p>我的收藏</p><span><img src="images/arrow.png"></span>
+			</li>
+			<li class="last">
+				<p>我的咨询</p><span><img src="images/arrow.png"></span>
+			</li>
+		</ul>
+	</div>
+	<div class="personal_mid">
+		<ul>
+			<li>
+				<p>我的收货地址</p><span><img src="images/arrow.png"></span>
+			</li>
+			<li class="last">
+				<p>个人资料</p><span><img src="images/arrow.png"></span>
+			</li>
+		</ul>
+	</div>
+	<div class="personal_bot">
+		<input type="button" value="安全退出" class="aqtc" />
+	</div>
+	
+	<!--固定底部 S-->
+	<div class="ts-bottom-fix">
+		<div class="ts-inner-wrap">
+			<ul class="clearfix">
+				<li class="normal"><a href="index.html"><i class="ico ind"></i><span>精选</span></a></li>
+				<li class="normal"><a href="category_page.html" class="cur"><i class="ico show"></i><span>分类</span></a></li>
+				<li class="normal mrl"><a href="apply_V.html"><i class="ico con"></i><span>申V</span></a></li>
+				<li class="normal"><a href="personal.html"><i class="ico shop"></i><span>我的</span></a></li>
+			</ul>
+		</div>
+	</div>
+	<!--固定底部 E-->
+</div>
+</body>
+</html>
+<script>
+	var mark=1;
+	$(".slist").bind("click", function(){
+		if(mark==1){//把他展开
+			$(this).children('.fadin').fadeIn();
+			mark=2;
+		}else if(mark==2){//收缩
+			$(this).children('.fadin').fadeOut();
+			mark=1;
+		}
+	});
+</script>

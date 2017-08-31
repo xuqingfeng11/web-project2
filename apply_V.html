@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<title>申V页</title>
+<link rel="stylesheet" type="text/css" href="css/publice.css"/>
+<link rel="stylesheet" type="text/css" href="css/style.css"/>
+<link rel="stylesheet" href="css/swiper.min.css">
+<script src="js/jquery-1.10.1.min.js" type="text/javascript"></script>
+<script type="text/javascript">        
+	fnResize();
+	var evt = "onorientationchange" in window ? "orientationchange" : "resize";
+	window.addEventListener("resize", function() {
+	    fnResize()
+	}, false);
+	function fnResize(){
+	    var docWidth = document.documentElement.clientWidth,
+	            body = document.getElementsByTagName('html')[0];
+	if(docWidth >= 750) docWidth = 749;
+	body.style.fontSize = docWidth / 20 + 'px';
+	}
+</script> 
+<script src="js/swiper.min.js"></script>
+<script type="text/javascript" src="js/style.js" ></script>
+</head>
+<body>
+<div class="ts-wrap">
+	<div class="apply_con">
+		<p><input type="text" value="输入您的手机号码" class="testD text" onClick="test5()" onblur="test6()"  id="testC" /><a href="#" class="yzm">获取验证码</a></p>	
+		<input type="text" value="输入手机验证码" class="testE text" onClick="test7()" onblur="test8()"  id="testD" />
+		<input type="password" placeholder="输入您的密码" class="testF text"  onClick="test9()" onblur="test10()"  id="testE" />
+		<p class="p1">请填写申请资料</p>
+		<input type="text" value="真实姓名" class="testG text" onClick="testa()" onblur="testb()"  id="testF" />
+		<input type="text" value="QQ号码" class="testH text"  onClick="testc()" onblur="testd()"  id="testG" />
+		<input type="text" value="微信号（发红包使用）" class="testI text" onClick="teste()" onblur="testf()"  id="testH" />
+		<input type="text" value="推荐人ID" class="testJ text"  onClick="testg()" onblur="testh()"  id="testI" />
+		<input type="button" value="申请VIP" class="testK text" />
+		<p class="p1">温馨提示：资料越完善则更快通过审核；请填写推荐人ID号，没有或者不正确填写的暂且不通过。</p>
+		<p class="p2">已有账号 <a href="login.html">立即登录</a> </p>
+	</div>
+	<!--固定底部 S-->
+	<div class="ts-bottom-fix">
+		<div class="ts-inner-wrap">
+			<ul class="clearfix">
+				<li class="normal"><a href="index.html"><i class="ico ind"></i><span>精选</span></a></li>
+				<li class="normal"><a href="category_page.html" class="cur"><i class="ico show"></i><span>分类</span></a></li>
+				<li class="normal mrl"><a href="apply_V.html"><i class="ico con"></i><span>申V</span></a></li>
+				<li class="normal"><a href="personal.html"><i class="ico shop"></i><span>我的</span></a></li>
+			</ul>
+		</div>
+	</div>
+	<!--固定底部 E-->
+</div>	
+</body>
+</html>
+
